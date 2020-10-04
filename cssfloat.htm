@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>float</title>
+        <style>
+            img{
+                float:right;
+                margin: 10px 5px 10px 10px;
+            }
+            p.clearfix{
+                overflow:auto;
+                border: 5px solid #73AD21;
+                border-top-color: red;
+                border-right-color: yellow;
+                border-bottom-color: blue;
+                border-style: groove;
+            }
+            .div1{
+                float: left;
+                width: 100px;
+                height: 50px;
+                margin: 10px;
+                border: 3px solid #73AD21;
+            }
+            .div2{
+                border: 1px solid red;
+            }
+            .div3{
+                float: left;
+                width: 100px;
+                height:50px;
+                margin:10px;
+                border:3px solid #73AD21;
+                
+            }
+            .div4{
+                border:1px solid red;
+                clear:left;
+
+            }
+            /*------------web design layout-------------*/
+            
+            div{
+                border:5px solid blue;
+
+            }
+            clearfix03{
+                overflow: auto;
+            }
+            nav{
+                float: left;
+                width:200px;
+                border: 5px solid #73AD21;
+            }
+            section{
+                margin-left: 206px ;
+                border:5px solid red;
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</p>
+        <p class="clearfix"><img src="santramimage.jpg" alt="santram" width="160px" height="230px">
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
+
+</p>
+        <hr>
+        <h2>Without Clear</h2>
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2-Notice that the div2 element is after div1, in the HTML code. However, since div1 is floated to the left, this happens: the text in div2 is floated around div1, and div2 surrounds the whole thing.</div>
+        <h2>Using Clear</h2>
+        <div class="div3">div3</div>
+        <div class="div4">div4 - Using clear moves div4 down below the floated div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+        <br>
+        <br>
+        <div class="clearfix03">
+        <nav>
+            <span>Nav</span>
+            <li><a target="_self" href="#">Home</a></li>
+            <li><a target="_self" href="#">CSS</a></li>
+            <li><a target="_self" href="#">HTML</a></li>
+            <li><a target="_self" href="#">JavaScript</a></li>
+        </nav>
+        <section> <span>Section</span> 
+            <p>Notice we have put a clearfix on the div container. It is not needed in this example, but it would be if the nav element was longer than the non-floated section content.
+            To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.</p>
+        </section>
+        <section>
+            <span>Section</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</p>
+        </section>
+        </div>
+        
+        
+        
+    </body>
+</html>
